@@ -1,0 +1,240 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.backButton {
+  position: static;
+  font-size: 2.5rem;
+  color: #363636;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.tableButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.table button {
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.table button:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.titleBar {
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 1rem 1rem 0 0;
+  outline: 1px solid #eaeaea;
+}
+
+.titleBarChild {
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.titleBar h1 {
+  font-size: 2.5rem;
+  color: #dddddd;
+  margin-right: auto;
+}
+
+.titleBarChild h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-right: auto;
+}
+
+.titleBar button {
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  margin-left: auto;
+  border: 1px solid #dddddd;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.titleBar button:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.addButton {
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem 1.3rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  margin-left: auto;
+  border: 1px solid #dddddd;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.addButtonChild {
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1.3rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  float: right;
+  border: 1px solid #dddddd;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.addButtonChild:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.popupButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.submitButton {
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  flex: 7;
+}
+
+.submitButton:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.deleteButton {
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  background-color: #fa5555;
+  border: 1px solid #dddddd;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  flex: 1;
+}
+
+.deleteButton:hover {
+  border: 1px solid rgb(56, 56, 56);
+}
+
+.popup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-size: 2rem;
+}
+
+.inputContainer label {
+  width: 350px;
+}
+
+.inputContainer input {
+  font-size: 2rem;
+  margin-left: 1rem;
+  width: 300px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #eaeaea;
+}
+
+.lineNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.lineNumber input {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: white;
+}
