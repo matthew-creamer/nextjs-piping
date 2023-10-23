@@ -146,7 +146,7 @@ export default function Detail() {
     });
 
     if (response.status === 200 || response.status === 201) {
-      mutate('/api/cml');
+      mutate(`/api/cml?param1=${line_number}`);
       mutate(`/api/test_point?param1=${line_number}&param2=${cardData ? GetCard('CML').search : 0}`);
       mutate(`/api/thickness?param1=${line_number}&param2=${cardData ? GetCard('TP').search1 : 0}&param3=${cardData ? GetCard('TP').search2 : 0}`);
     }
@@ -163,7 +163,7 @@ export default function Detail() {
     });
 
     if (response.status === 204) {
-      mutate('/api/cml');
+      mutate(`/api/cml?param1=${line_number}`);
       mutate(`/api/test_point?param1=${line_number}&param2=${cardData ? GetCard('CML').search : 0}`);
       mutate(`/api/thickness?param1=${line_number}&param2=${cardData ? GetCard('TP').search1 : 0}&param3=${cardData ? GetCard('TP').search2 : 0}`);
     }
